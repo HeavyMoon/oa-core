@@ -20,6 +20,8 @@ else:
 def _in(ctx):
     if not flMac:
         tts = pyttsx3.init()
+        tts.setProperty('rate',180)
+        tts.setProperty('voice', 'english_rp+f3')
 
     while not ctx.finished.is_set():
         s = get()

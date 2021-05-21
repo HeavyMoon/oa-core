@@ -3,7 +3,7 @@
 import logging
 _logger = logging.getLogger(__name__)
 
-import playsound
+import subprocess
 
 from oa.modules.abilities.core import get, put
 
@@ -15,7 +15,7 @@ def _in(ctx):
         put('speech_recognition','mute')
 
         try:
-            playsound.playsound(path)
+            subprocess.call(f'aplay {path}', shell=True)
         except Exception as ex:
             _logger.error("Error playing sound: {}".format(ex))
 

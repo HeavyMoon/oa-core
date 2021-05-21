@@ -46,3 +46,9 @@ Open Assistant is a private open source personal assistant prototype able to com
 * Say "Open Assistant!" to launch root mind. Say "Root Mind!" to see if you can get the reply, "Hello World!"
 * Say "List commands!" to get a list of available voice commands.
 * Add your own!
+
+## features
+- replace playsound with aplay for raspberry pi
+- change tone of voice
+- set timeout of ear to 6.5
+

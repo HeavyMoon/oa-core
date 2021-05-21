@@ -10,7 +10,8 @@ import sounddevice
 
 DEFAULT_CONFIG = {
     # The `timeout` parameter is the maximum number of seconds that a phrase continues before stopping and returning a result. If the `timeout` is None there will be no phrase time limit.
-    "timeout": None,
+    #"timeout": None,
+    "timeout": 6.5,
 
     "channels": 1,
 
