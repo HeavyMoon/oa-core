@@ -43,6 +43,15 @@ if __name__ == '__main__':
     log_template = "[%(asctime)s] %(levelname)s %(threadName)s %(name)s: %(message)s"
     logging.basicConfig(level=logging.INFO if not args.debug else logging.DEBUG, filename=args.log_file, format=log_template)
 
+    print('\033[1m')    # BOLD
+    print('\033[32m')   # GREEN
+    print('     ____                      ___              _      __              __   ')
+    print('    / __ \___  ____  ____     /   |  __________(_)____/ /_____ _____  / /_  ')
+    print('   / / / / _ \/ __ \/ __ \   / /| | / ___/ ___/ / ___/ __/ __ `/ __ \/ __/  ')
+    print('  / /_/ /  __/ /_/ / / / /  / ___ |(__  |__  ) (__  ) /_/ /_/ / / / / /_    ')
+    print('  \____/\___/ .___/_/ /_/  /_/  |_/____/____/_/____/\__/\__,_/_/ /_/\__/    ')
+    print('           /_/                                                              ')
+    print('\033[0m')    # RESET
     _logger.info("Start Open Assistant")
 
     config = {
